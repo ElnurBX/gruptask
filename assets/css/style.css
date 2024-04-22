@@ -64,6 +64,8 @@ img {
 
 /* Optional: Add your own custom styles below this line */
 /* End Reset CSS */
+
+
 .foot1 {
   display: flex;
   padding: 5% 0%; }
@@ -125,6 +127,7 @@ hr {
   .foot2_right {
     margin-top: 20px;
     gap: 20px; } }
+
 
 .container {
   width: 1440px;
@@ -354,6 +357,22 @@ hr {
     width: calc(100% / 12 * 11); }
   .col-xs-12 {
     width: 100%; } }
+
+.addForm {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #3563E9;
+  color: #fff;
+  padding: 40px; }
+  .addForm form {
+    width: 70%; }
+  .addForm__inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #54A6FF; }
 
 .card {
   width: 20%; }
