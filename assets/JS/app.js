@@ -217,40 +217,39 @@ console.log("test1");
 const favorite=document.getElementsByClassName("favorite")
 
 function addbasket(id) {
-    // Veritabanından araba bulun
+   
     let basketFound = local.find((car) => car.id === id);
     if (!basketFound) {
         console.error(`Car with ID ${id} not found`);
         return;
     }
 
-    // Sepet durumu değiştirme
+   
     basketFound.basket = !basketFound.basket;
 
-    // `fishlist` listesini güncelle
     if (basketFound.basket) {
-        // Sepete eklenen arabayı `fishlist` listesine ekleyin
+ 
         fishlist.push(basketFound);
         favorite[id-1].classList.toggle("check")
         console.log(`Car with ID ${id} added to basket.`);
     } else {
-        // Sepetten çıkarılan arabayı `fishlist` listesinden çıkarın
+
         fishlist = fishlist.filter(car => car.id !== id);
         favorite[id-1].classList.toggle("check")
         console.log(`Car with ID ${id} removed from basket.`);
     }
 
-    // `db` veritabanını güncelleyin
+
     let index = db.findIndex((car) => car.id === id);
     if (index !== -1) {
         db[index] = basketFound;
     }
 
-    // `localStorage`'ı güncelleyin
+
     localStorage.setItem('cars', JSON.stringify(db));
     localStorage.setItem('fishlist', JSON.stringify(fishlist));
 
-    // Sepetteki arabaları tabloya yansıtın
+
     tabaladder(local);
 }
 
@@ -288,23 +287,23 @@ function tabaladder(fishlist) {
 tabaladder(fishlist)
 
 function removeCar(id) {
-    // `fishlist` listesinden belirli bir ID'ye sahip arabayı çıkarın
+
     const index = fishlist.findIndex(car => car.id === id);
 
-    // Eğer araba bulunduysa, listeden çıkarın
+n
     if (index !== -1) {
-        // `splice` kullanarak arabayı listeden çıkarın
+
         fishlist.splice(index, 1);
 
-        // Güncellenen listeyi `localStorage`'a kaydedin
+
         localStorage.setItem('fishlist', JSON.stringify(fishlist));
 
         console.log(`Car with ID ${id} removed from fishlist.`);
         
-        // Tabloyu güncelleyin
+
         tabaladder(fishlist);
     } else {
-        // Araba bulunamadıysa bir hata mesajı yazdırın
+
         console.error(`Car with ID ${id} not found in fishlist.`);
     }
 }
