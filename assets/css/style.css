@@ -64,6 +64,12 @@ img {
 
 /* Optional: Add your own custom styles below this line */
 /* End Reset CSS */
+<<<<<<< HEAD
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; }
+=======
 
 
 .foot1 {
@@ -128,6 +134,7 @@ hr {
     margin-top: 20px;
     gap: 20px; } }
 
+>>>>>>> bf42d93d6227b3b56a68a2dd839b156b87133337
 
 .container {
   width: 1440px;
@@ -358,6 +365,11 @@ hr {
   .col-xs-12 {
     width: 100%; } }
 
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; }
+
 header {
   margin-top: 30px; }
   header .container {
@@ -392,6 +404,16 @@ header {
     header .header__right img {
       width: 44px;
       height: 44px; }
+    header .header__right__btn {
+      display: flex; }
+      header .header__right__btn button {
+        padding: 12px;
+        border: none;
+        background-color: #3563E9;
+        color: white;
+        border-radius: 10px; }
+        header .header__right__btn button :hover {
+          cursor: pointer; }
 
 @media (max-width: 375px) {
   header .container {
@@ -411,6 +433,155 @@ header {
     margin-bottom: 20px; }
   .header__right__display {
     display: none; } }
+<<<<<<< HEAD
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal; }
+
+.rent__section .container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-top: 50px;
+  font-family: 'Plus';
+  margin-bottom: 50px; }
+
+.rent__section__left {
+  background-color: #54A6FF;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  .rent__section__left__pos {
+    width: 100%;
+    height: 100%; }
+  .rent__section__left__text {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white; }
+    .rent__section__left__text h1 {
+      font-size: 32px;
+      font-weight: bold; }
+    .rent__section__left__text button {
+      padding: 12px;
+      border: none;
+      color: white;
+      background-color: #3563E9;
+      width: 120px;
+      border-radius: 6px;
+      font-weight: 500; }
+
+.rent__section__right {
+  background-color: #3563E9;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+  .rent__section__right__pos {
+    width: 100%;
+    height: 100%; }
+  .rent__section__right__text {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white; }
+    .rent__section__right__text h1 {
+      font-size: 32px;
+      font-weight: bold; }
+    .rent__section__right__text button {
+      padding: 12px;
+      border: none;
+      color: white;
+      background-color: #54A6FF;
+      width: 120px;
+      border-radius: 6px;
+      font-weight: 500; }
+
+.rent__info__section .container {
+  display: flex;
+  justify-content: space-around; }
+
+.rent__info__section__left {
+  padding: 22px;
+  border: 1px solid #FFFFFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 14px; }
+  .rent__info__section__left__loc {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__left__loc__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+  .rent__info__section__left__cont {
+    display: flex;
+    align-items: center;
+    gap: 36px; }
+  .rent__info__section__left__date {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__left__date__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+  .rent__info__section__left__time {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__left__time__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+
+.rent__info__section__right {
+  padding: 22px;
+  border: 1px solid #FFFFFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 14px; }
+  .rent__info__section__right__loc {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__right__loc__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+  .rent__info__section__right__cont {
+    display: flex;
+    align-items: center;
+    gap: 36px; }
+  .rent__info__section__right__date {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__right__date__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+  .rent__info__section__right__time {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; }
+    .rent__info__section__right__time__sel {
+      display: flex;
+      gap: 8px;
+      color: #90A3BF; }
+=======
 =======
 .addForm {
   display: flex;
@@ -436,3 +607,4 @@ header {
     .card__header button {
       background-color: white;
       border: none; }
+>>>>>>> bf42d93d6227b3b56a68a2dd839b156b87133337
