@@ -110,6 +110,7 @@ hr {
   width: 90%;
   color: #cecece; }
 
+
 @media screen and (max-width: 1056px) {
   .foot1 {
     flex-direction: column;
@@ -179,6 +180,7 @@ hr {
     width: 100%;
     text-align: center;
     gap: 10px; } }
+
 
 .container {
   width: 1440px;
@@ -409,6 +411,13 @@ hr {
   .col-xs-12 {
     width: 100%; } }
 
+<<<<<<< Esref/feat
+=======
+.m-5 {
+  padding-top: 50px;
+  margin-bottom: 50px; }
+
+>>>>>>> main
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -450,6 +459,7 @@ header {
       height: 44px; }
     header .header__right__btn {
       display: flex; }
+<<<<<<< Esref/feat
       header .header__right__btn a {
         padding: 14px;
         border: none;
@@ -488,11 +498,23 @@ header {
     width: 25px;
     margin-right: 10px; } }
 
+=======
+      header .header__right__btn button {
+        padding: 12px;
+        border: none;
+        background-color: #3563E9;
+        color: white;
+        border-radius: 10px; }
+        header .header__right__btn button :hover {
+          cursor: pointer; }
+
+>>>>>>> main
 @media (max-width: 375px) {
   header .container {
     align-items: stretch;
     padding: 0 10%;
     justify-content: center;
+<<<<<<< Esref/feat
     display: flex;
     width: 300px; }
     header .container .header__right__btn {
@@ -508,6 +530,20 @@ header {
     text-align: center;
     margin-bottom: 20px; }
   header .header__right__display {
+=======
+    display: flex; }
+  .header__left {
+    display: flex;
+    flex-wrap: wrap; }
+    .header__left__input {
+      width: 240px; }
+  .header__left,
+  .header__right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .header__right__display {
+>>>>>>> main
     display: none; } }
 
 body {
@@ -596,8 +632,12 @@ body {
     .rent__info__section__left__loc__sel {
       display: flex;
       gap: 8px;
+<<<<<<< Esref/feat
       color: #90A3BF;
       align-items: center; }
+=======
+      color: #90A3BF; }
+>>>>>>> main
   .rent__info__section__left__cont {
     display: flex;
     align-items: center;
@@ -610,8 +650,12 @@ body {
     .rent__info__section__left__date__sel {
       display: flex;
       gap: 8px;
+<<<<<<< Esref/feat
       color: #90A3BF;
       align-items: center; }
+=======
+      color: #90A3BF; }
+>>>>>>> main
   .rent__info__section__left__time {
     margin-top: 10px;
     display: flex;
@@ -620,8 +664,12 @@ body {
     .rent__info__section__left__time__sel {
       display: flex;
       gap: 8px;
+<<<<<<< Esref/feat
       color: #90A3BF;
       align-items: center; }
+=======
+      color: #90A3BF; }
+>>>>>>> main
 
 .rent__info__section__right {
   padding: 22px;
@@ -636,8 +684,10 @@ body {
     .rent__info__section__right__loc__sel {
       display: flex;
       gap: 8px;
+
       color: #90A3BF;
       align-items: center; }
+
   .rent__info__section__right__cont {
     display: flex;
     align-items: center;
@@ -650,8 +700,10 @@ body {
     .rent__info__section__right__date__sel {
       display: flex;
       gap: 8px;
+
       color: #90A3BF;
       align-items: center; }
+
   .rent__info__section__right__time {
     margin-top: 10px;
     display: flex;
@@ -660,6 +712,7 @@ body {
     .rent__info__section__right__time__sel {
       display: flex;
       gap: 8px;
+
       color: #90A3BF;
       align-items: center; }
 
@@ -749,6 +802,8 @@ body {
   .rent__info__section__icon {
     display: none; } }
 
+      color: #90A3BF; }
+
 .addForm {
   display: flex;
   justify-content: center;
@@ -766,6 +821,7 @@ body {
     background-color: #54A6FF; }
 
 .card {
+
   width: 20%; }
   .card__header {
     display: flex;
@@ -773,4 +829,108 @@ body {
     .card__header button {
       background-color: white;
       border: none; }
+
+
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1%;
+  width: 15%;
+  min-width: 300px; }
+  .card__header {
+    display: flex;
+    justify-content: space-between; }
+    .card__header__left h5 {
+      font-size: 24px;
+      margin-bottom: 1%; }
+    .card__header__left span {
+      color: #b9b9b9;
+      font-size: 16px; }
+    .card__header button {
+      background-color: white;
+      border: none;
+      width: 24px;
+      height: 24px; }
+      .card__header button i {
+        font-size: 24px;
+        color: #ED3F3F; }
+  .card__img {
+    padding: 25% 0%; }
+  .card__properties {
+    margin-top: 3%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2%;
+    font-size: 16px;
+    margin-bottom: 10%; }
+    .card__properties img {
+      width: 16px; }
+    .card__properties span {
+      margin-right: 10px; }
+  .card__bottom {
+    display: flex; }
+    .card__bottom__left span {
+      font-size: 24px; }
+    .card__bottom button {
+      margin-left: 40px;
+      border-radius: 5px;
+      background-color: #3563E9;
+      padding: 10px;
+      border: none;
+      color: white; }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 50%; }
+  .card__header {
+    flex-direction: column;
+    align-items: center; } }
+
+/* Modify the CSS */
+#delete {
+  border: none;
+  background-color: red;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white; }
+
+tbody tr td img {
+  width: 100px; }
+
+.view {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  color: #a1a1a1;
+  margin-bottom: 7%; }
+
+.all {
+  color: #3563E9; }
+
+.cars {
+  margin-left: -3%;
+  display: flex;
+  gap: 5%; }
+
+@media screen and (max-width: 1000px) {
+  .cars {
+    margin-left: -3%;
+    display: flex;
+    gap: 5%;
+    overflow-x: scroll;
+    position: relative; }
+  .cars::before {
+    content: "";
+    width: 100px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    right: -10px;
+    z-index: 100; } }
+
+.check i {
+  color: transparent !important;
+  text-shadow: 0px 0px 1px black; }
 

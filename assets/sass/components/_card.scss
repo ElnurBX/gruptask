@@ -1,3 +1,4 @@
+
 .card{
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -5,7 +6,7 @@
     width: 15%;
     min-width: 300px;
     &__header{
-        display: flex;
+        display: flex; 
         justify-content: space-between;
         &__left{
             h5{
@@ -140,3 +141,10 @@
     }
     
 }
+.check{
+    i{
+        color: transparent !important;
+        text-shadow: 0px 0px 1px rgba(0,0,0,1);
+    }
+}
+
