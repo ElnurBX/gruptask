@@ -1,7 +1,7 @@
 
-let db=[
+let local = JSON.parse(localStorage.getItem('cars')) || [
     {
-        id: 1,
+        id: 0,
         basket: false,
         carName: "Toyota Corolla1",
         carType: "sedan",
@@ -11,7 +11,7 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
-        id: 2,
+        id: 1,
         basket: false,
         carName: "Toyota Corolla2",
         carType: "sedan",
@@ -21,7 +21,7 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
-        id: 3,
+        id: 2,
         basket: false,
         carName: "Toyota Corolla3",
         carType: "sedan",
@@ -31,7 +31,7 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
-        id: 4,
+        id: 3,
         basket: false,
         carName: "Toyota Corolla4",
         carType: "sedan",
@@ -41,7 +41,7 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
-        id: 5,
+        id: 4,
         basket: false,
         carName: "Toyota Corolla5",
         carType: "sedan",
@@ -51,7 +51,7 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
-        id: 6,
+        id: 5,
         basket: false,
         carName: "Toyota Corolla6",
         carType: "sedan",
@@ -61,6 +61,17 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },{
+        id:6,
+        basket: false,
+        carName: "Toyota Corolla6",
+        carType: "sedan",
+        carFuelVolume: 50,
+        carMotorsType: "mecanica",
+        passengersCount: 4,
+        carPrice: 25000,
+        carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
+    },
+    {
         id:7,
         basket: false,
         carName: "Toyota Corolla6",
@@ -104,21 +115,10 @@ let db=[
         carPrice: 25000,
         carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
     },
-    {
-        id:11,
-        basket: false,
-        carName: "Toyota Corolla6",
-        carType: "sedan",
-        carFuelVolume: 50,
-        carMotorsType: "mecanica",
-        passengersCount: 4,
-        carPrice: 25000,
-        carImgLink: "https://s3-alpha-sig.figma.com/img/702f/356e/48fe531e6fd2626c5d1041dbfcde3341?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ko3YmACSiuvhf10VqRgyWmQRydJqezCQ5Q~OXxQp59E9RNWvc3vVFbiQN9BjH0VMuGfQwT5xTqz9sitpApXwszMonjNvwNkwjlz-Ppi3SaCrb79ChT9M5g5BiUnc2QADR3d-LYBjTNgev6wWwlh8SN0CH6scUCIyXHgQI0nP376y~sHNBGq8Gowx0BepeV5gR2XQkTkXuWZuvbvIfm0ZKNna-~zhcO2TCWAcYfqeyL9wlZfmZF4k26L9K996k0yvqjkYHdK4DtlpoM9-dSJewil8nm~h10o-S1lLUCkFimcu1Wenb4FfzGwcQDIrY7W9D4pPmp09VBZ131Bq9PawPQ__"
-    },
 ]
-let local = JSON.parse(localStorage.getItem('cars')) || db;
+
 let fishlist=JSON.parse(localStorage.getItem('fishlist')) || [];
-localStorage.setItem('cars', JSON.stringify(db));
+localStorage.setItem('cars', JSON.stringify(local));
 localStorage.setItem('fishlist', JSON.stringify(fishlist));
 
 console.log("test1");
@@ -151,15 +151,16 @@ const add=document.getElementById("add")
 
 console.log("test1");
 const testnull = (carNameVal, carTypeVal, carFuilValumVal, carMotorsTypeVal, carPriceVal, carimglinkVal) => {
-    console.log((!(carNameVal.trim() === "")  && !( carTypeVal.trim() === "")  &&  !(carFuilValumVal.trim() === "")  &&  !(carMotorsTypeVal.trim() === "")  &&  !(carPriceVal.trim() === "")  &&  !(carimglinkVal.trim() === "")) )
+    
     if (!(carNameVal.trim() === "")  && !( carTypeVal.trim() === "")  &&  !(carFuilValumVal.trim() === "")  &&  !(carMotorsTypeVal.trim() === "")  &&  !(carPriceVal.trim() === "")  &&  !(carimglinkVal.trim() === "")) {
         alert("Please fill in all fields");
-        
-        return true
-    } else {
         alert("All fields are filled correctly");  
+        return true   ;
         
-        return;
+    } else {
+        
+        return false;
+        
         
     }
 }
@@ -167,23 +168,29 @@ console.log("test1");
 const cars =document.getElementsByClassName("cars")
 function cardfild(local) {
 let count=0;
+
     for (let i = 0; i < cars.length; i++) {
         let inner = '';
     
         for (let j = count; j <count+4; j++) {
             console.log(j);
-    
+            
             const car = local[j];
+            if (car.basket) {
+                buttonlike="check"
+            }else{
+                buttonlike=""
+            }
             inner += `
             <div class="card col-4">
                 <div class="card__header">
-                    <i class="d-none">${car.id}</i>
+                    <i class="d-none secid">${car.id}</i>
                     <div class="card__header__left">
                         <h5>${car.carName}</h5>
                         <span>${car.carType}</span>
                     </div>
-                    <button class="favorite check" onclick="addbasket(${car.id})">
-                        <i class="fa-solid fa-heart"></i>
+                    <button class="favorite ${buttonlike} " onclick="addbasket(${car.id})">
+                    <i class="fa-solid fa-heart"></i>
                     </button>
                 </div>
                 <div class="card__img">
@@ -214,10 +221,15 @@ let count=0;
     
 }
 console.log("test1");
-const favorite=document.getElementsByClassName("favorite")
+const favorite = document.getElementsByClassName('favorite');
 
+const secid=document.getElementsByClassName("secid")
+
+
+
+cardfild(local) 
 function addbasket(id) {
-   
+    id++
     let basketFound = local.find((car) => car.id === id);
     if (!basketFound) {
         console.error(`Car with ID ${id} not found`);
@@ -240,13 +252,13 @@ function addbasket(id) {
     }
 
 
-    let index = db.findIndex((car) => car.id === id);
+    let index = local.findIndex((car) => car.id === id);
     if (index !== -1) {
-        db[index] = basketFound;
+        local[index] = basketFound;
     }
 
 
-    localStorage.setItem('cars', JSON.stringify(db));
+    localStorage.setItem('cars', JSON.stringify(local));
     localStorage.setItem('fishlist', JSON.stringify(fishlist));
 
 
@@ -287,12 +299,11 @@ function tabaladder(fishlist) {
 tabaladder(fishlist)
 
 function removeCar(id) {
-
+   
     const index = fishlist.findIndex(car => car.id === id);
 
-n
     if (index !== -1) {
-
+ 
         fishlist.splice(index, 1);
 
 
@@ -308,11 +319,11 @@ n
     }
 }
 
+
 //
 add.addEventListener("submit", (e)=>{
-    console.log("test3");
     e.preventDefault()
-    let id=db.length
+    let id=local.length
     let carNameVal =carNameInp.value
     let carTypeVal =carTypeInp.value
     let carFuilValumVal =carFuilValumInp.value
@@ -321,12 +332,13 @@ add.addEventListener("submit", (e)=>{
     let carPriceVal =carPriceInp.value
     let carimglinkVal =carimglinkInp.value
     let data= detastractcar(carNameVal,carTypeVal,carFuilValumVal,carMotorsTypeVal,passengersCountVal,carPriceVal,carimglinkVal,id)
-   
+    // console.log( testnull(carNameVal, carTypeVal, carFuilValumVal, carMotorsTypeVal, carPriceVal, carimglinkVal));
     if ( testnull(carNameVal, carTypeVal, carFuilValumVal, carMotorsTypeVal, carPriceVal, carimglinkVal)) {
-     db.push(data)
+     local.push(data)
      
    }
    
 
-    localStorage.setItem('cars', JSON.stringify(db));
+    localStorage.setItem('cars', JSON.stringify(local));
 })
+
