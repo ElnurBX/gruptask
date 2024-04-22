@@ -1,0 +1,11 @@
+.card{
+    width: 20%;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        button{
+            background-color: white;
+            border: none;
+        }
+    }
+}
