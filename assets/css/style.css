@@ -337,6 +337,16 @@ header {
     header .header__right img {
       width: 44px;
       height: 44px; }
+    header .header__right__btn {
+      display: flex; }
+      header .header__right__btn button {
+        padding: 12px;
+        border: none;
+        background-color: #3563E9;
+        color: white;
+        border-radius: 10px; }
+        header .header__right__btn button :hover {
+          cursor: pointer; }
 
 @media (max-width: 375px) {
   header .container {
