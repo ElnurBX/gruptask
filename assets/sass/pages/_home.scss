@@ -1,1 +1,203 @@
-@import "../utils/variables"
+@import "../utils/variables";
+@import "../base/typography";
+
+.rent__section{
+
+    .container{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 50px;
+        font-family: 'Plus';
+        margin-bottom: 50px;
+    }
+
+    &__left{
+        background-color: $light-color;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+       
+       &__pos{
+        
+        width: 100%;
+        height: 100%;
+       
+       }
+
+       &__text{
+        position: absolute;
+        top: 0;
+         padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+
+        h1{
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        button{
+            padding: 12px;
+            border: none;
+            color: white;
+            background-color: $main-color;
+            width: 120px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+       }
+
+    }
+
+    &__right{
+        background-color: $main-color;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        &__pos{
+            
+            width: 100%;
+            height: 100%;
+           
+           }
+
+           &__text{
+            position: absolute;
+            top: 0;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+
+            h1{
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+           
+            button{
+                padding: 12px;
+                border: none;
+                color: white;
+                background-color: $light-color;
+                width: 120px;
+                border-radius: 6px;
+                font-weight: 500;
+            }
+           }
+    }
+}
+
+.rent__info__section{
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__left{ 
+        padding: 22px;
+        border: 1px solid #FFFFFF;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 14px;
+        
+        &__loc{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        &__cont{
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        &__date{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        &__time{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        
+    }
+
+    &__right{ 
+        padding: 22px;
+        border: 1px solid #FFFFFF;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 14px;
+        
+        &__loc{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        &__cont{
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+
+        &__date{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        &__time{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+           &__sel{
+            display: flex;
+            gap: 8px;
+            color: $text-color;
+           }
+        }
+
+        
+    }
+}
