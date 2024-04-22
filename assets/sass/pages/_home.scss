@@ -114,6 +114,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -132,6 +133,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -144,6 +146,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -165,6 +168,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -183,6 +187,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -195,9 +200,162 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
         
     }
 }
+
+@media screen and (max-width: 375px) {
+    
+
+    .rent__section .container {
+        flex-direction: column;
+        align-items: center;
+       width: 300px;
+      
+    }
+
+    .rent__section__left {
+        width: 100%;
+        margin-bottom: 20px;
+        
+       
+        p{
+            display: none;
+        }
+
+        button{
+            width: 76% !important;
+            position: absolute;
+            bottom: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 18px;
+            
+        }
+    }
+
+    
+    .rent__section__right{
+        display: none;
+       
+    }
+
+    
+        .rent__info__section .container {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    
+        .rent__info__section__left,
+        .rent__info__section__right {
+            width: 320px;
+            margin-bottom: 20px;
+            padding: 15px; 
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 14px;
+        }
+    
+        .rent__info__section__left__loc,
+        .rent__info__section__left__date,
+        .rent__info__section__left__time,
+        .rent__info__section__right__loc,
+        .rent__info__section__right__date,
+        .rent__info__section__right__time {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    
+        .rent__info__section__left__sel,
+        .rent__info__section__right__sel {
+            display: flex;
+            gap: 8px;
+            color: $text-color; 
+            align-items: center;
+        }
+    
+        .rent__info__section__left__cont,
+        .rent__info__section__right__cont {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+    
+       
+        
+        
+        
+    
+}
+
+@media screen and (max-width: 1056px) {
+    .rent__section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rent__section__left,
+    .rent__section__right {
+        
+        margin-bottom: 20px;
+    }
+
+    .rent__section__left__pos,
+    .rent__section__right__pos {
+        width: 100%;
+        
+    }
+
+    .rent__section__left__text,
+    .rent__section__right__text {
+        position: static; 
+        padding: 30px;
+        text-align: center; 
+    }
+
+    .rent__section__left__text h1,
+    .rent__section__right__text h1 {
+        font-size: 24px; 
+    }
+
+    .rent__section__left__text button,
+    .rent__section__right__text button {
+        width: 100%; 
+    }
+
+    .rent__info__section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rent__info__section__left,
+    .rent__info__section__right {
+        
+        margin-bottom: 20px;
+    }
+
+    .rent__info__section__left,
+    .rent__info__section__right {
+        padding: 15px; 
+    }
+
+    .rent__info__section__icon {
+        display: none;
+    }
+
+
+}
+
+
+    
+
