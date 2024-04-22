@@ -17,8 +17,8 @@
         position: relative;
         border-radius: 12px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-       
-       &__pos{
+
+    &__pos{
         
         width: 100%;
         height: 100%;
@@ -93,7 +93,7 @@
     }
 }
 
-.rent__info__section{
+.rent_info_section{
     .container{
         display: flex;
         justify-content: space-around;
@@ -114,6 +114,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -132,6 +133,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -144,6 +146,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -165,6 +168,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -183,6 +187,7 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
@@ -195,9 +200,158 @@
             display: flex;
             gap: 8px;
             color: $text-color;
+            align-items: center;
            }
         }
 
         
     }
+}
+
+@media screen and (max-width: 375px) {
+    
+
+    .rent__section .container {
+        flex-direction: column;
+        align-items: center;
+       width: 300px;
+      
+    }
+
+    .rent_section_left {
+        width: 100%;
+        margin-bottom: 20px;
+        
+       
+        p{
+            display: none;
+        }
+
+        button{
+            width: 76% !important;
+            position: absolute;
+            bottom: 20px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 18px;
+            
+        }
+    }
+
+    
+    .rent_section_right{
+        display: none;
+       
+    }
+
+    
+        .rent_info_section .container {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+    
+        .rent_infosection_left,
+        .rent_infosection_right {
+            width: 320px;
+            margin-bottom: 20px;
+            padding: 15px; 
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 14px;
+        }
+    
+        .rent_infosectionleft_loc,
+        .rent_infosectionleft_date,
+        .rent_infosectionleft_time,
+        .rent_infosectionright_loc,
+        .rent_infosectionright_date,
+        .rent_infosectionright_time {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    
+        .rent_infosectionleft_sel,
+        .rent_infosectionright_sel {
+            display: flex;
+            gap: 8px;
+            color: $text-color; 
+            align-items: center;
+        }
+    
+        .rent_infosectionleft_cont,
+        .rent_infosectionright_cont {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+        }
+    
+       
+        
+        
+        
+    
+}
+
+@media screen and (max-width: 1056px) {
+    .rent__section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rent_section_left,
+    .rent_section_right {
+        
+        margin-bottom: 20px;
+    }
+
+    .rent_sectionleft_pos,
+    .rent_sectionright_pos {
+        width: 100%;
+        
+    }
+
+    .rent_sectionleft_text,
+    .rent_sectionright_text {
+        position: static; 
+        padding: 30px;
+        text-align: center; 
+    }
+
+    .rent_sectionleft_text h1,
+    .rent_sectionright_text h1 {
+        font-size: 24px; 
+    }
+
+    .rent_sectionleft_text button,
+    .rent_sectionright_text button {
+        width: 100%; 
+    }
+
+    .rent_info_section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rent_infosection_left,
+    .rent_infosection_right {
+        
+        margin-bottom: 20px;
+    }
+
+    .rent_infosection_left,
+    .rent_infosection_right {
+        padding: 15px; 
+    }
+
+    .rent_infosection_icon {
+        display: none;
+    }
+
+
 }
