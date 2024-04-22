@@ -1,2 +1,96 @@
 @import "../utils/variables";
 
+header{
+    margin-top: 30px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__left{
+        display: flex;
+  
+       align-items: center;
+         gap: 50px;
+
+       &__input{
+         position: relative;
+         align-items: center;
+            display: flex;
+            
+         
+         &__search{
+            left: 14px;
+        
+         }
+
+         &__filter{
+            right: 14px;
+           
+         }
+         
+         
+         input{
+            width: 100%; 
+            max-width: 492px; 
+            padding: 14px 44px;
+            border-radius: 16px;
+            border:  1px solid #C3D4E9;
+         }
+         
+         img{
+            position: absolute;
+         }
+       }
+        a{
+            color: $main-color;
+        }
+    }
+
+    .header__right{
+        display: flex;
+        gap: 20px;
+
+        img{
+            width: 44px;
+            height: 44px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    header .container {
+        // flex-direction: column; 
+        align-items: stretch; 
+        padding:0 10% ;
+        justify-content: center;
+        display: flex;
+        
+    }
+
+    .header__left{
+        display: flex;
+        flex-wrap: wrap;
+
+        &__input{
+            width: 240px;
+
+            
+        }
+    }
+
+    .header__left,
+    .header__right {
+        width: 100%;
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .header__right__display{
+        display: none;
+
+       
+    }
+
+    
+}

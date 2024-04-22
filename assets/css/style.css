@@ -65,7 +65,7 @@ img {
 /* Optional: Add your own custom styles below this line */
 /* End Reset CSS */
 .container {
-  width: 1440;
+  width: 1440px;
   margin: 0 auto; }
 
 .container-fluid {
@@ -292,3 +292,57 @@ img {
     width: calc(100% / 12 * 11); }
   .col-xs-12 {
     width: 100%; } }
+
+header {
+  margin-top: 30px; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  header .header__left {
+    display: flex;
+    align-items: center;
+    gap: 50px; }
+    header .header__left__input {
+      position: relative;
+      align-items: center;
+      display: flex; }
+      header .header__left__input__search {
+        left: 14px; }
+      header .header__left__input__filter {
+        right: 14px; }
+      header .header__left__input input {
+        width: 100%;
+        max-width: 492px;
+        padding: 14px 44px;
+        border-radius: 16px;
+        border: 1px solid #C3D4E9; }
+      header .header__left__input img {
+        position: absolute; }
+    header .header__left a {
+      color: #3563E9; }
+  header .header__right {
+    display: flex;
+    gap: 20px; }
+    header .header__right img {
+      width: 44px;
+      height: 44px; }
+
+@media (max-width: 375px) {
+  header .container {
+    align-items: stretch;
+    padding: 0 10%;
+    justify-content: center;
+    display: flex; }
+  .header__left {
+    display: flex;
+    flex-wrap: wrap; }
+    .header__left__input {
+      width: 240px; }
+  .header__left,
+  .header__right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .header__right__display {
+    display: none; } }
