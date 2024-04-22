@@ -229,7 +229,7 @@ const secid=document.getElementsByClassName("secid")
 
 cardfild(local) 
 function addbasket(id) {
-    id++
+ 
     let basketFound = local.find((car) => car.id === id);
     if (!basketFound) {
         console.error(`Car with ID ${id} not found`);
@@ -238,7 +238,7 @@ function addbasket(id) {
 
    
     basketFound.basket = !basketFound.basket;
-
+ 
     if (basketFound.basket) {
  
         fishlist.push(basketFound);
