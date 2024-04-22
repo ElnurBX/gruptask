@@ -1,0 +1,20 @@
+.addForm{
+   
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color:#3563E9 ;
+    color: #fff;
+    padding: 40px;
+    form{
+        width: 70%;
+    }
+    &__inputs{
+        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #54A6FF;
+    }
+}
