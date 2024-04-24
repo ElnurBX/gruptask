@@ -125,7 +125,6 @@ console.log("test1");
 function detastractcar(carName,carType,carFuilValum,passengersCount,carPrice,carMotorsType,carimglink,id){
     
     let data={
-        basket:false,
         carName:carName,
         carType:carType,
         carFuilValum:carFuilValum,

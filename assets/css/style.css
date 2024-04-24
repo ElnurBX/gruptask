@@ -5,6 +5,9 @@
 *::after {
   box-sizing: border-box; }
 
+body {
+  overflow-x: hidden; }
+
 /* Remove default margin and padding */
 body,
 h1,
@@ -481,13 +484,13 @@ header {
   .header__left {
     flex: 1;
     margin-right: 20px; }
-  .header_left_input {
+  .header__left__input {
     display: none; }
   .header__right {
     flex: 1; }
-  .header_right_btn {
+  .header__right__btn {
     display: none; }
-  .header_right_display img {
+  .header__right__display img {
     width: 25px;
     margin-right: 10px; } }
 
@@ -498,7 +501,7 @@ header {
     justify-content: center;
     display: flex;
     width: 300px; }
-    header .container .header_right_btn {
+    header .container .header__right__btn {
       display: none; }
   header .header__left {
     display: flex;
@@ -510,7 +513,7 @@ header {
     width: 100%;
     text-align: center;
     margin-bottom: 20px; }
-  header .header_right_display {
+  header .header__right__display {
     display: none; } }
 
 body {
@@ -582,85 +585,85 @@ body {
       border-radius: 6px;
       font-weight: 500; }
 
-.rent_info_section .container {
+.rent__info__section .container {
   display: flex;
   justify-content: space-around; }
 
-.rent_info_section__left {
+.rent__info__section__left {
   padding: 22px;
   border: 1px solid #FFFFFF;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 14px; }
-  .rent_info_section__left__loc {
+  .rent__info__section__left__loc {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__left__loc__sel {
+    .rent__info__section__left__loc__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
       align-items: center; }
-  .rent_info_section__left__cont {
+  .rent__info__section__left__cont {
     display: flex;
     align-items: center;
     gap: 36px; }
-  .rent_info_section__left__date {
+  .rent__info__section__left__date {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__left__date__sel {
+    .rent__info__section__left__date__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
       align-items: center; }
-  .rent_info_section__left__time {
+  .rent__info__section__left__time {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__left__time__sel {
+    .rent__info__section__left__time__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
       align-items: center; }
 
-.rent_info_section__right {
+.rent__info__section__right {
   padding: 22px;
   border: 1px solid #FFFFFF;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 14px; }
-  .rent_info_section__right__loc {
+  .rent__info__section__right__loc {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__right__loc__sel {
+    .rent__info__section__right__loc__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
       align-items: center; }
-  .rent_info_section__right__cont {
+  .rent__info__section__right__cont {
     display: flex;
     align-items: center;
     gap: 36px; }
-  .rent_info_section__right__date {
+  .rent__info__section__right__date {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__right__date__sel {
+    .rent__info__section__right__date__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
       align-items: center; }
-  .rent_info_section__right__time {
+  .rent__info__section__right__time {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-    .rent_info_section__right__time__sel {
+    .rent__info__section__right__time__sel {
       display: flex;
       gap: 8px;
       color: #90A3BF;
@@ -671,50 +674,50 @@ body {
     flex-direction: column;
     align-items: center;
     width: 300px; }
-  .rent_section_left {
+  .rent__section__left {
     width: 100%;
     margin-bottom: 20px; }
-    .rent_section_left p {
+    .rent__section__left p {
       display: none; }
-    .rent_section_left button {
+    .rent__section__left button {
       width: 76% !important;
       position: absolute;
       bottom: 20px;
       height: 40px;
       display: flex;
       align-items: center; }
-    .rent_section_left h1 {
+    .rent__section__left h1 {
       font-size: 18px; }
-  .rent_section_right {
+  .rent__section__right {
     display: none; }
-  .rent_info_section .container {
+  .rent__info__section .container {
     flex-direction: column;
     align-items: center; }
-  .rent_infosection_left,
-  .rent_infosection_right {
+  .rent__info__section__left,
+  .rent__info__section__right {
     width: 320px;
     margin-bottom: 20px;
     padding: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 14px; }
-  .rent_infosectionleft_loc,
-  .rent_infosectionleft_date,
-  .rent_infosectionleft_time,
-  .rent_infosectionright_loc,
-  .rent_infosectionright_date,
-  .rent_infosectionright_time {
+  .rent__info__section__left__loc,
+  .rent__info__section__left__date,
+  .rent__info__section__left__time,
+  .rent__info__section__right__loc,
+  .rent__info__section__right__date,
+  .rent__info__section__right__time {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 8px; }
-  .rent_infosectionleft_sel,
-  .rent_infosectionright_sel {
+  .rent__info__section__left__sel,
+  .rent__info__section__right__sel {
     display: flex;
     gap: 8px;
     color: #90A3BF;
     align-items: center; }
-  .rent_infosectionleft_cont,
-  .rent_infosectionright_cont {
+  .rent__info__section__left__cont,
+  .rent__info__section__right__cont {
     display: flex;
     align-items: center;
     gap: 36px; } }
@@ -723,33 +726,33 @@ body {
   .rent__section .container {
     flex-direction: column;
     align-items: center; }
-  .rent_section_left,
-  .rent_section_right {
+  .rent__section__left,
+  .rent__section__right {
     margin-bottom: 20px; }
-  .rent_sectionleft_pos,
-  .rent_sectionright_pos {
+  .rent__section__left__pos,
+  .rent__section__right__pos {
     width: 100%; }
-  .rent_sectionleft_text,
-  .rent_sectionright_text {
+  .rent__section__left__text,
+  .rent__section__right__text {
     position: static;
     padding: 30px;
     text-align: center; }
-  .rent_sectionleft_text h1,
-  .rent_sectionright_text h1 {
+  .rent__section__left__text h1,
+  .rent__section__right__text h1 {
     font-size: 24px; }
-  .rent_sectionleft_text button,
-  .rent_sectionright_text button {
+  .rent__section__left__text button,
+  .rent__section__right__text button {
     width: 100%; }
-  .rent_info_section .container {
+  .rent__info__section .container {
     flex-direction: column;
     align-items: center; }
-  .rent_infosection_left,
-  .rent_infosection_right {
+  .rent__info__section__left,
+  .rent__info__section__right {
     margin-bottom: 20px; }
-  .rent_infosection_left,
-  .rent_infosection_right {
+  .rent__info__section__left,
+  .rent__info__section__right {
     padding: 15px; }
-  .rent_infosection_icon {
+  .rent__info__section__icon {
     display: none; } }
 
 .addForm {
@@ -806,16 +809,20 @@ body {
     .card__properties span {
       margin-right: 10px; }
   .card__bottom {
-    display: flex; }
+    display: flex;
+    gap: 10px; }
     .card__bottom__left span {
       font-size: 24px; }
-    .card__bottom button {
-      margin-left: 40px;
-      border-radius: 5px;
-      background-color: #3563E9;
-      padding: 10px;
-      border: none;
-      color: white; }
+    .card__bottom__right {
+      display: flex;
+      justify-content: center; }
+      .card__bottom__right button {
+        text-align: center;
+        border-radius: 5px;
+        background-color: #3563E9;
+        padding: 10px;
+        border: none;
+        color: white; }
 
 @media screen and (max-width: 768px) {
   .card {
@@ -851,23 +858,59 @@ tbody tr td img {
   display: flex;
   gap: 5%; }
 
+.overlay {
+  display: none; }
+
 @media screen and (max-width: 1000px) {
-  .cars {
+  .d {
+    position: relative; }
+  .carsItem {
     margin-left: -3%;
     display: flex;
     gap: 5%;
     overflow-x: scroll;
-    position: relative; }
-  .cars::before {
-    content: "";
+    position: relative;
+    z-index: 0; }
+  .overlay {
+    display: block;
+    position: absolute;
     width: 100px;
     height: 100%;
     background-color: #fff;
     opacity: 0.5;
-    position: absolute;
-    right: -10px;
-    z-index: 100; } }
+    top: 0;
+    right: 0;
+    z-index: 10; } }
 
 .check i {
   color: transparent !important;
   text-shadow: 0px 0px 1px black; }
+
+.carsItem {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between; }
+
+div#carlist {
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 100px; }
+
+table.table {
+  margin: 100px auto;
+  width: 50%;
+  border: 1px solid black;
+  border-collapse: collapse; }
+  table.table thead, table.table tbody {
+    min-width: 280px;
+    max-width: 1000px; }
+  table.table th, table.table td {
+    max-width: 10%;
+    text-align: center;
+    border: 1px solid black; }
+  table.table .btn-danger {
+    background-color: red;
+    color: #fff; }
+  table.table .btn-primary {
+    background-color: #2a55d9;
+    color: #fff; }

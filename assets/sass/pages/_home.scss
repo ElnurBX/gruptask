@@ -17,8 +17,8 @@
         position: relative;
         border-radius: 12px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-    &__pos{
+       
+       &__pos{
         
         width: 100%;
         height: 100%;
@@ -93,7 +93,7 @@
     }
 }
 
-.rent_info_section{
+.rent__info__section{
     .container{
         display: flex;
         justify-content: space-around;
@@ -218,7 +218,7 @@
       
     }
 
-    .rent_section_left {
+    .rent__section__left {
         width: 100%;
         margin-bottom: 20px;
         
@@ -243,20 +243,20 @@
     }
 
     
-    .rent_section_right{
+    .rent__section__right{
         display: none;
        
     }
 
     
-        .rent_info_section .container {
+        .rent__info__section .container {
             flex-direction: column;
             align-items: center;
             
         }
     
-        .rent_infosection_left,
-        .rent_infosection_right {
+        .rent__info__section__left,
+        .rent__info__section__right {
             width: 320px;
             margin-bottom: 20px;
             padding: 15px; 
@@ -264,28 +264,28 @@
             border-radius: 14px;
         }
     
-        .rent_infosectionleft_loc,
-        .rent_infosectionleft_date,
-        .rent_infosectionleft_time,
-        .rent_infosectionright_loc,
-        .rent_infosectionright_date,
-        .rent_infosectionright_time {
+        .rent__info__section__left__loc,
+        .rent__info__section__left__date,
+        .rent__info__section__left__time,
+        .rent__info__section__right__loc,
+        .rent__info__section__right__date,
+        .rent__info__section__right__time {
             margin-top: 10px;
             display: flex;
             flex-direction: column;
             gap: 8px;
         }
     
-        .rent_infosectionleft_sel,
-        .rent_infosectionright_sel {
+        .rent__info__section__left__sel,
+        .rent__info__section__right__sel {
             display: flex;
             gap: 8px;
             color: $text-color; 
             align-items: center;
         }
     
-        .rent_infosectionleft_cont,
-        .rent_infosectionright_cont {
+        .rent__info__section__left__cont,
+        .rent__info__section__right__cont {
             display: flex;
             align-items: center;
             gap: 36px;
@@ -304,52 +304,52 @@
         align-items: center;
     }
 
-    .rent_section_left,
-    .rent_section_right {
+    .rent__section__left,
+    .rent__section__right {
         
         margin-bottom: 20px;
     }
 
-    .rent_sectionleft_pos,
-    .rent_sectionright_pos {
+    .rent__section__left__pos,
+    .rent__section__right__pos {
         width: 100%;
         
     }
 
-    .rent_sectionleft_text,
-    .rent_sectionright_text {
+    .rent__section__left__text,
+    .rent__section__right__text {
         position: static; 
         padding: 30px;
         text-align: center; 
     }
 
-    .rent_sectionleft_text h1,
-    .rent_sectionright_text h1 {
+    .rent__section__left__text h1,
+    .rent__section__right__text h1 {
         font-size: 24px; 
     }
 
-    .rent_sectionleft_text button,
-    .rent_sectionright_text button {
+    .rent__section__left__text button,
+    .rent__section__right__text button {
         width: 100%; 
     }
 
-    .rent_info_section .container {
+    .rent__info__section .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .rent_infosection_left,
-    .rent_infosection_right {
+    .rent__info__section__left,
+    .rent__info__section__right {
         
         margin-bottom: 20px;
     }
 
-    .rent_infosection_left,
-    .rent_infosection_right {
+    .rent__info__section__left,
+    .rent__info__section__right {
         padding: 15px; 
     }
 
-    .rent_infosection_icon {
+    .rent__info__section__icon {
         display: none;
     }
 

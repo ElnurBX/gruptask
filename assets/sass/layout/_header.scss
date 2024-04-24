@@ -108,7 +108,7 @@ header{
         margin-right: 20px; 
     }
 
-    .header_left_input {
+    .header__left__input {
         display: none; 
     }
 
@@ -116,11 +116,11 @@ header{
         flex: 1; 
     }
 
-    .header_right_btn {
+    .header__right__btn {
         display: none; 
     }
 
-    .header_right_display img {
+    .header__right__display img {
         width: 25px; 
         margin-right: 10px; 
     }
@@ -139,7 +139,7 @@ header{
         width: 300px;
        
         
-        .header_right_btn{
+        .header__right__btn{
             display: none;
          }
     }
@@ -162,7 +162,7 @@ header{
         margin-bottom: 20px; 
     }
 
-    .header_right_display{
+    .header__right__display{
         display: none;
 
        
@@ -171,4 +171,3 @@ header{
     
     
 }}
-

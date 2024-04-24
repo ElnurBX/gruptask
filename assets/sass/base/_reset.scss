@@ -6,7 +6,9 @@
 *::after {
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 /* Remove default margin and padding */
 body,
 h1,
